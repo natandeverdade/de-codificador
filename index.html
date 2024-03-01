@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="text/javascript" src="./app.js" defer></script>
+    <title>Decodificador de texto</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="quadro">
+            <img class="logo" src="./assets/logo.svg" alt="Logo Alura">
+            <div class="bloco__1">
+                <textarea onkeyup="validarTexto()" id="entrada-texto" class="entrada__texto" type="text" value="" placeholder="Digite seu texto..."></textarea>
+                <section class="paragrafo__atencao">
+                    <img src="./assets/exclamacao.svg" alt="Ícone com ponto de exclamação">
+                    <p class="paragrafo__atencao__texto"></p>
+                </section>
+                <div class="botoes">
+                    <button id="btnCod" onclick="codificarTexto()" class="botao__azul" >Codificar</button>
+                    <button id="btnDec" onclick="decodificarTexto()" class="botao__transparente">Decodificar</button>
+                </div>
+            </div>
+            <div class="bloco__2">
+                <div class="show">
+                    <img class="imagem__vazio" src="./assets/image.svg" alt="Desenho de uma pessoa observando um diamante com uma lupa">
+                </div>
+                <div class="quadro__retorno">
+                    <h2 id="subtitulo" class="subtitulo"></h2>
+                    <p id="paragrafo" class="paragrafo"></p>
+                </div>
+                <button onclick="copiar()" class="botao__copiar" style="display: none;">Copiar</button>
+            </div>
+        </section>
+    <footer class="rodape">
+        <div class="bl01">
+            <p>Decodificador de texto</p>
+        </div>
+        <div class="bl02">
+            <p>Projeto realizado em colaboração com a <a class="rodape__link" href="https://www.alura.com.br/" alt="Alura">Alura</a>, para o programa ONE Oracle, codado por <a class="rodape__link" href="https://github.com/natandeverdade">Natan</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>
