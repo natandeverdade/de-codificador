@@ -1,7 +1,7 @@
 mudarConteudo();
 
 let paragrafoAtencao = document.querySelector('.paragrafo__atencao__texto');
-paragrafoAtencao.innerHTML = "Apenas letras minúsculas, sem acentos ou caracteres especiais!";
+paragrafoAtencao.innerHTML = "Apenas letras minúsculas, sem acentos, números ou caracteres especiais!";
 let validacao = "[^a-z ]";
 
 let aparecer = document.querySelector('.show');
@@ -59,7 +59,7 @@ function codificarTexto() {
         espacoResultado.style.textAlign = "center";
         botaoCopiar.style.display = "none";
         subtitulo.innerHTML = "Não foi possível codificar o texto!";
-        paragrafo.innerHTML = "O campo contém caracteres especiais, acentos ou letras maiúsculas.";
+        paragrafo.innerHTML = "O campo contém caracteres especiais, acentos, números ou letras maiúsculas.";
     }else{
         subtitulo.innerHTML = codificar(mensagemConteudo);
         paragrafo.innerHTML = "";
@@ -90,7 +90,7 @@ function decodificarTexto() {
         espacoResultado.style.textAlign = "center";
         botaoCopiar.style.display = "none";
         subtitulo.innerHTML = "Não foi possível decodificar o texto!";
-        paragrafo.innerHTML = "O campo contém caracteres especiais, acentos ou letras maiúsculas.";
+        paragrafo.innerHTML = "O campo contém caracteres especiais, acentos, números ou letras maiúsculas.";
     }else{
         subtitulo.innerHTML = decodificar(mensagemCodificado);
         paragrafo.innerHTML = "";
